@@ -1,0 +1,262 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gl.emms.whale.demo.DemoMainActivity$PlaceholderFragment" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tips"
+                android:textSize="20.0sp" />
+
+            <TextView
+                android:id="@+id/sendto_str"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="发送目标：" />
+
+            <LinearLayout
+                android:id="@+id/sendto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image"
+                android:layout_marginLeft="28.0dip"
+                android:layout_marginRight="28.0dip"
+                android:background="@drawable/login_input"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30.0dip"
+                    android:background="#00ffffff"
+                    android:digits="1234567890."
+                    android:hint="IP地址"
+                    android:maxLength="16"
+                    android:maxLines="1"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip"
+                    android:textColor="#ff1d1d1d"
+                    android:textColorHint="#ff666666"
+                    android:textSize="16.0sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="1.0px"
+                    android:layout_marginRight="1.0px"
+                    android:background="#ffc0c3c4" />
+
+                <EditText
+                    android:id="@+id/port"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30.0dip"
+                    android:background="#00ffffff"
+                    android:gravity="center_vertical"
+                    android:hint="端口号"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:maxLines="1"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip"
+                    android:phoneNumber="true"
+                    android:textColor="#ff1d1d1d"
+                    android:textColorHint="#ff666666"
+                    android:textSize="16.0sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="1.0px"
+                    android:layout_marginRight="1.0px"
+                    android:background="#ffc0c3c4" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/open_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28.0dip"
+                android:layout_marginRight="28.0dip"
+                android:layout_marginTop="12.0dip"
+                android:background="@drawable/send_button_bg"
+                android:gravity="center"
+                android:paddingTop="5.0dip"
+                android:text="打开"
+                android:textColor="#ff333333"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/sender_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="发送内容：" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/image"
+                    android:layout_marginLeft="28.0dip"
+                    android:layout_marginRight="28.0dip"
+                    android:background="@drawable/login_input"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/type"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip"
+                        android:background="#00ffffff"
+                        android:hint="type"
+                        android:maxLength="16"
+                        android:maxLines="1"
+                        android:paddingLeft="12.0dip"
+                        android:paddingRight="12.0dip"
+                        android:textColor="#ff1d1d1d"
+                        android:textColorHint="#ff666666"
+                        android:textSize="16.0sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0px"
+                        android:layout_marginLeft="1.0px"
+                        android:layout_marginRight="1.0px"
+                        android:background="#ffc0c3c4" />
+
+                    <EditText
+                        android:id="@+id/sender"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip"
+                        android:background="#00ffffff"
+                        android:gravity="center_vertical"
+                        android:hint="sender"
+                        android:inputType="textPassword"
+                        android:maxLength="16"
+                        android:maxLines="1"
+                        android:paddingLeft="12.0dip"
+                        android:paddingRight="12.0dip"
+                        android:textColor="#ff1d1d1d"
+                        android:textColorHint="#ff666666"
+                        android:textSize="16.0sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0px"
+                        android:layout_marginLeft="1.0px"
+                        android:layout_marginRight="1.0px"
+                        android:background="#ffc0c3c4" />
+
+                    <EditText
+                        android:id="@+id/reciever"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip"
+                        android:background="#00ffffff"
+                        android:gravity="center_vertical"
+                        android:hint="reciever"
+                        android:inputType="textPassword"
+                        android:maxLength="16"
+                        android:maxLines="1"
+                        android:paddingLeft="12.0dip"
+                        android:paddingRight="12.0dip"
+                        android:textColor="#ff1d1d1d"
+                        android:textColorHint="#ff666666"
+                        android:textSize="16.0sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0px"
+                        android:layout_marginLeft="1.0px"
+                        android:layout_marginRight="1.0px"
+                        android:background="#ffc0c3c4" />
+
+                    <EditText
+                        android:id="@+id/data1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip"
+                        android:background="#00ffffff"
+                        android:gravity="center_vertical"
+                        android:hint="data1"
+                        android:inputType="textPassword"
+                        android:maxLength="16"
+                        android:maxLines="1"
+                        android:paddingLeft="12.0dip"
+                        android:paddingRight="12.0dip"
+                        android:textColor="#ff1d1d1d"
+                        android:textColorHint="#ff666666"
+                        android:textSize="16.0sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0px"
+                        android:layout_marginLeft="1.0px"
+                        android:layout_marginRight="1.0px"
+                        android:background="#ffc0c3c4" />
+
+                    <EditText
+                        android:id="@+id/data2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip"
+                        android:background="#00ffffff"
+                        android:gravity="center_vertical"
+                        android:hint="data2"
+                        android:inputType="textPassword"
+                        android:maxLength="16"
+                        android:maxLines="1"
+                        android:paddingLeft="12.0dip"
+                        android:paddingRight="12.0dip"
+                        android:textColor="#ff1d1d1d"
+                        android:textColorHint="#ff666666"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28.0dip"
+                android:layout_marginRight="28.0dip"
+                android:layout_marginTop="12.0dip"
+                android:background="@drawable/send_button_bg"
+                android:gravity="center"
+                android:paddingTop="5.0dip"
+                android:text="发送"
+                android:textColor="#ff333333"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/reciever_str"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="接收数据：" />
+
+            <TextView
+                android:id="@+id/reciever_content"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip"
+                android:background="@drawable/login_input" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+StringBuffer buffer = new StringBuffer();
+		buffer.append("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
+		buffer.append("<request>");
+		buffer.append("<type>").append(this.getType()).append("</type>");
+		buffer.append("<sender>").append(this.getSender()).append("</sender>");
+		buffer.append("<reciever>").append(this.getReciever()).append("</reciever>");
+		buffer.append("<timestamp>").append(timestamp).append("</timestamp>");
+		buffer.append("<data>");
+		for (String key : data.keySet()) {
+			buffer.append("<" + key + ">").append(data.get(key)).append(
+					"</" + key + ">");
+		}
+		buffer.append("</data>");
+		buffer.append("</request>");
+		Log.v("whale", "buffer:"+buffer);
+		return buffer.toString();

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WhaleSocketSDK-demo</string>
+    <string name="tips">基于android平台的socket客户端的通讯SDK 演示</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
